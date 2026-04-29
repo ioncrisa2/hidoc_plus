@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'app_colors.dart';
 
 abstract final class AppTypography {
   static TextTheme textTheme() {
-    return const TextTheme(
+    const baseTextTheme = TextTheme(
       displaySmall: TextStyle(
         fontSize: 34,
         height: 1.12,
@@ -68,5 +69,7 @@ abstract final class AppTypography {
         color: AppColors.textMuted,
       ),
     );
+
+    return GoogleFonts.poppinsTextTheme(baseTextTheme);
   }
 }
