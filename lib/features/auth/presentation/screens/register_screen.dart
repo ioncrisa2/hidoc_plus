@@ -46,7 +46,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     if (!_formKey.currentState!.validate()) {
       return;
     }
-    Navigator.pushReplacementNamed(context, AppRoutes.dashboard);
+    Navigator.pushReplacementNamed(context, AppRoutes.completeProfile);
   }
 
   @override

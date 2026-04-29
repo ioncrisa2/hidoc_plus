@@ -15,6 +15,8 @@ class AppTextField extends StatelessWidget {
     this.suffixIcon,
     this.validator,
     this.textInputAction,
+    this.readOnly = false,
+    this.onTap,
   });
 
   final String label;
@@ -26,6 +28,8 @@ class AppTextField extends StatelessWidget {
   final Widget? suffixIcon;
   final String? Function(String?)? validator;
   final TextInputAction? textInputAction;
+  final bool readOnly;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -42,6 +46,8 @@ class AppTextField extends StatelessWidget {
           obscureText: obscureText,
           validator: validator,
           textInputAction: textInputAction,
+          readOnly: readOnly,
+          onTap: onTap,
           style: textTheme.bodyLarge?.copyWith(color: AppColors.textPrimary),
           decoration: InputDecoration(
             hintText: hintText,

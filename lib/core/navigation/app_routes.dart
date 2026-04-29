@@ -2,6 +2,7 @@ abstract final class AppRoutes {
   static const welcome = '/';
   static const login = '/login';
   static const register = '/register';
+  static const completeProfile = '/complete-profile';
   static const dashboard = '/dashboard';
   static const searchHub = '/search-hub';
   static const notificationHub = '/notification-hub';

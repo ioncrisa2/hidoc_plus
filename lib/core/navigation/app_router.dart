@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../features/auth/presentation/screens/complete_profile_screen.dart';
 import '../../features/auth/presentation/screens/login_screen.dart';
 import '../../features/consultation/presentation/models/book_consultation_args.dart';
 import '../../features/consultation/presentation/models/booking_confirmation_args.dart';
@@ -43,6 +44,11 @@ abstract final class AppRouter {
         return _buildRoute(
           settings: settings,
           builder: (_) => const RegisterScreen(),
+        );
+      case AppRoutes.completeProfile:
+        return _buildRoute(
+          settings: settings,
+          builder: (_) => const CompleteProfileScreen(),
         );
       case AppRoutes.dashboard:
         return _buildRoute(
